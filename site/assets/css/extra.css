@@ -1,0 +1,26 @@
+[data-mobile-drawer][data-open="false"] {
+  transform: translateX(-100%);
+}
+
+[data-mobile-drawer][data-open="true"] {
+  transform: translateX(0);
+}
+
+[data-mobile-overlay][data-open="false"] {
+  opacity: 0;
+  pointer-events: none;
+}
+
+[data-mobile-overlay][data-open="true"] {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+[data-character-modal][hidden] {
+  display: none !important;
+}
+
+[data-age-gate][hidden] {
+  display: none !important;
+}
+

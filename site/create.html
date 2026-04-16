@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create AI Character | OurDream.ai</title>
+    <meta name="description" content="Create your AI character. Define their name, age, greeting, and personality to start chatting." />
+    <meta name="keywords" content="create AI character, character creator, AI companion, OurDream" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/extra.css" />
+    <script src="./assets/js/main.js" defer></script>
+  </head>
+  <body class="bg-[#0a0a0a] text-white">
+    <div class="min-h-screen bg-[#0a0a0a] text-white">
+      <button
+        data-drawer-open
+        class="fixed top-2 left-2 z-[60] h-10 w-10 rounded-xl transition-all duration-200 flex items-center justify-center bg-[#1a1a1a] border border-[#2a2a2a] text-white shadow-lg active:scale-95 touch-manipulation lg:hidden"
+        aria-label="Open menu"
+        type="button"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" x2="20" y1="12" y2="12"></line>
+          <line x1="4" x2="20" y1="6" y2="6"></line>
+          <line x1="4" x2="20" y1="18" y2="18"></line>
+        </svg>
+      </button>
+      <div data-mobile-overlay data-open="false" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-40 lg:hidden transition-opacity duration-200"></div>
+      <aside data-mobile-drawer data-open="false" class="fixed left-0 top-0 h-screen bg-[#0d0d0d] border-r border-[#2a2a2a] flex flex-col z-50 w-[280px] sm:w-[260px] lg:w-[220px] transition-transform duration-300 lg:translate-x-0">
+        <a href="./index.html" class="p-4 pt-16 lg:pt-4 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center shadow-lg">
+            <span class="text-white font-bold text-base">O</span>
+          </div>
+          <span class="text-white font-semibold text-xl lg:text-lg">ourdream<span class="text-pink-500">.ai</span></span>
+        </a>
+        <nav class="flex-1 px-3 py-4 space-y-1.5 overflow-y-auto">
+          <a class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-base lg:text-sm transition-all duration-200 active:scale-[0.98] touch-manipulation bg-[#1a1a1a] text-white border-l-[3px] border-pink-500" href="./create.html">
+            <span class="w-6 text-center">+</span><span class="font-medium">Create</span>
+          </a>
+          <a class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-base lg:text-sm transition-all duration-200 active:scale-[0.98] touch-manipulation text-gray-400 hover:bg-[#1a1a1a] hover:text-white" href="./index.html">
+            <span class="w-6 text-center">◎</span><span class="font-medium">Explore</span>
+          </a>
+          <a class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-base lg:text-sm transition-all duration-200 active:scale-[0.98] touch-manipulation text-gray-400 hover:bg-[#1a1a1a] hover:text-white" href="./chat.html">
+            <span class="w-6 text-center">💬</span><span class="font-medium">Chat</span>
+          </a>
+          <a class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-base lg:text-sm transition-all duration-200 active:scale-[0.98] touch-manipulation text-gray-400 hover:bg-[#1a1a1a] hover:text-white" href="./generate.html">
+            <span class="w-6 text-center">🖼</span><span class="font-medium">Generate</span>
+          </a>
+          <a class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-base lg:text-sm transition-all duration-200 active:scale-[0.98] touch-manipulation text-gray-400 hover:bg-[#1a1a1a] hover:text-white" href="./custom.html">
+            <span class="w-6 text-center">✦</span><span class="font-medium">My AI</span>
+          </a>
+          <a class="w-full mt-5 py-3 lg:py-2 text-base lg:text-sm bg-pink-600 hover:bg-pink-500 text-white border-0 rounded-xl shadow-lg shadow-pink-500/20 inline-flex items-center justify-center gap-2" href="./affiliate.html">
+            <span>👑</span><span>Upgrade</span>
+          </a>
+        </nav>
+        <div class="px-3 py-4 space-y-1.5 border-t border-[#2a2a2a]">
+          <a class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-base lg:text-sm transition-all duration-200 active:scale-[0.98] touch-manipulation text-gray-400 hover:bg-[#1a1a1a] hover:text-white" href="./profile.html"><span class="w-6 text-center">👤</span><span class="font-medium">Profile</span></a>
+          <a class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-base lg:text-sm transition-all duration-200 active:scale-[0.98] touch-manipulation text-gray-400 hover:bg-[#1a1a1a] hover:text-white" href="./support.html"><span class="w-6 text-center">🛟</span><span class="font-medium">Support</span></a>
+          <a class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-base lg:text-sm transition-all duration-200 active:scale-[0.98] touch-manipulation text-gray-400 hover:bg-[#1a1a1a] hover:text-white" href="./affiliate.html"><span class="w-6 text-center">⋯</span><span class="font-medium">More</span></a>
+        </div>
+      </aside>
+      <header class="fixed top-0 right-0 left-0 lg:left-[220px] z-30 h-12 sm:h-14 lg:h-[60px] flex items-center justify-end px-2 sm:px-4 lg:px-6 pl-14 sm:pl-14 lg:pl-6 bg-[#0a0a0a]/90 backdrop-blur-md shadow-lg">
+        <nav class="flex items-center gap-2 sm:gap-3" aria-label="Top navigation">
+          <a href="./profile.html" class="touch-manipulation">
+            <span class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all border border-[#2a2a2a] bg-transparent text-white hover:bg-[#1a1a1a] hover:text-white text-xs px-2.5 sm:px-4 py-1.5 h-8 sm:h-9 active:scale-95">Login</span>
+          </a>
+          <a href="./profile.html" class="touch-manipulation">
+            <span class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all bg-pink-600 hover:bg-pink-500 text-white border-0 text-xs px-2.5 sm:px-4 py-1.5 h-8 sm:h-9 active:scale-95 shadow-lg shadow-pink-500/20">Join Free</span>
+          </a>
+        </nav>
+      </header>
+      <main class="lg:ml-[220px] pt-12 sm:pt-14 lg:pt-[60px] min-h-screen pb-16 lg:pb-0">
+        <div class="w-full max-w-3xl mx-auto px-4 sm:px-6 py-8">
+          <header class="mb-6">
+            <h1 class="text-2xl sm:text-3xl font-bold text-white">Create Your AI Character</h1>
+            <p class="text-gray-400 mt-2">Design your perfect AI companion step by step.</p>
+          </header>
+          <section class="bg-[#0d0d0d] border border-[#2a2a2a] rounded-2xl p-4 sm:p-6 space-y-5">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <label class="space-y-2">
+                <span class="text-sm text-gray-300 font-medium">Character Name <span class="text-pink-500">*</span></span>
+                <input class="w-full bg-[#141414] border border-[#2a2a2a] rounded-xl px-4 py-3 text-white placeholder-gray-500 outline-none" placeholder="e.g., Luna, Alex, Sophia..." />
+              </label>
+              <label class="space-y-2">
+                <span class="text-sm text-gray-300 font-medium">Age <span class="text-pink-500">*</span></span>
+                <input class="w-full bg-[#141414] border border-[#2a2a2a] rounded-xl px-4 py-3 text-white placeholder-gray-500 outline-none" placeholder="e.g., 21, 25, 30..." />
+              </label>
+            </div>
+            <label class="space-y-2 block">
+              <span class="text-sm text-gray-300 font-medium">First Message / Greeting</span>
+              <textarea rows="4" class="w-full bg-[#141414] border border-[#2a2a2a] rounded-xl px-4 py-3 text-white placeholder-gray-500 outline-none" placeholder="How should your character greet users?"></textarea>
+              <p class="text-xs text-gray-500">This greeting will be the first message users see when starting a chat.</p>
+            </label>
+            <button class="w-full h-12 rounded-xl bg-pink-600 hover:bg-pink-500 text-white font-semibold transition-colors" type="button">Continue</button>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
+

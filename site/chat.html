@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat with AI Characters | OurDream.ai</title>
+    <meta name="description" content="Chat with AI characters in a responsive, immersive interface. Start a new chat and explore story-driven conversations." />
+    <meta name="keywords" content="AI chat, roleplay chat, AI girlfriend, AI boyfriend, OurDream" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/extra.css" />
+    <script src="./assets/js/main.js" defer></script>
+  </head>
+  <body class="bg-[#0a0a0a] text-white">
+    <div class="min-h-screen bg-[#0a0a0a] text-white">
+      <button data-drawer-open class="fixed top-2 left-2 z-[60] h-10 w-10 rounded-xl transition-all duration-200 flex items-center justify-center bg-[#1a1a1a] border border-[#2a2a2a] text-white shadow-lg active:scale-95 touch-manipulation lg:hidden" aria-label="Open menu" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+      </button>
+      <div data-mobile-overlay data-open="false" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-40 lg:hidden transition-opacity duration-200"></div>
+      <aside data-mobile-drawer data-open="false" class="fixed left-0 top-0 h-screen bg-[#0d0d0d] border-r border-[#2a2a2a] flex flex-col z-50 w-[280px] sm:w-[260px] lg:w-[220px] transition-transform duration-300 lg:translate-x-0">
+        <a href="./index.html" class="p-4 pt-16 lg:pt-4 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center shadow-lg"><span class="text-white font-bold text-base">O</span></div>
+          <span class="text-white font-semibold text-xl lg:text-lg">ourdream<span class="text-pink-500">.ai</span></span>
+        </a>
+        <nav class="flex-1 px-3 py-4 space-y-1.5 overflow-y-auto">
+          <a class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-base lg:text-sm transition-all duration-200 active:scale-[0.98] touch-manipulation text-gray-400 hover:bg-[#1a1a1a] hover:text-white" href="./create.html"><span class="w-6 text-center">+</span><span class="font-medium">Create</span></a>
+          <a class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-base lg:text-sm transition-all duration-200 active:scale-[0.98] touch-manipulation text-gray-400 hover:bg-[#1a1a1a] hover:text-white" href="./index.html"><span class="w-6 text-center">◎</span><span class="font-medium">Explore</span></a>
+          <a class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-base lg:text-sm transition-all duration-200 active:scale-[0.98] touch-manipulation bg-[#1a1a1a] text-white border-l-[3px] border-pink-500" href="./chat.html"><span class="w-6 text-center">💬</span><span class="font-medium">Chat</span></a>
+          <a class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-base lg:text-sm transition-all duration-200 active:scale-[0.98] touch-manipulation text-gray-400 hover:bg-[#1a1a1a] hover:text-white" href="./generate.html"><span class="w-6 text-center">🖼</span><span class="font-medium">Generate</span></a>
+          <a class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-base lg:text-sm transition-all duration-200 active:scale-[0.98] touch-manipulation text-gray-400 hover:bg-[#1a1a1a] hover:text-white" href="./custom.html"><span class="w-6 text-center">✦</span><span class="font-medium">My AI</span></a>
+          <a class="w-full mt-5 py-3 lg:py-2 text-base lg:text-sm bg-pink-600 hover:bg-pink-500 text-white border-0 rounded-xl shadow-lg shadow-pink-500/20 inline-flex items-center justify-center gap-2" href="./affiliate.html"><span>👑</span><span>Upgrade</span></a>
+        </nav>
+        <div class="px-3 py-4 space-y-1.5 border-t border-[#2a2a2a]">
+          <a class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-base lg:text-sm transition-all duration-200 active:scale-[0.98] touch-manipulation text-gray-400 hover:bg-[#1a1a1a] hover:text-white" href="./profile.html"><span class="w-6 text-center">👤</span><span class="font-medium">Profile</span></a>
+          <a class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-base lg:text-sm transition-all duration-200 active:scale-[0.98] touch-manipulation text-gray-400 hover:bg-[#1a1a1a] hover:text-white" href="./support.html"><span class="w-6 text-center">🛟</span><span class="font-medium">Support</span></a>
+          <a class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-base lg:text-sm transition-all duration-200 active:scale-[0.98] touch-manipulation text-gray-400 hover:bg-[#1a1a1a] hover:text-white" href="./affiliate.html"><span class="w-6 text-center">⋯</span><span class="font-medium">More</span></a>
+        </div>
+      </aside>
+      <header class="fixed top-0 right-0 left-0 lg:left-[220px] z-30 h-12 sm:h-14 lg:h-[60px] flex items-center justify-end px-2 sm:px-4 lg:px-6 pl-14 sm:pl-14 lg:pl-6 bg-[#0a0a0a]/90 backdrop-blur-md shadow-lg">
+        <nav class="flex items-center gap-2 sm:gap-3" aria-label="Top navigation">
+          <a href="./profile.html" class="touch-manipulation"><span class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all border border-[#2a2a2a] bg-transparent text-white hover:bg-[#1a1a1a] hover:text-white text-xs px-2.5 sm:px-4 py-1.5 h-8 sm:h-9 active:scale-95">Login</span></a>
+          <a href="./profile.html" class="touch-manipulation"><span class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all bg-pink-600 hover:bg-pink-500 text-white border-0 text-xs px-2.5 sm:px-4 py-1.5 h-8 sm:h-9 active:scale-95 shadow-lg shadow-pink-500/20">Join Free</span></a>
+        </nav>
+      </header>
+      <main class="lg:ml-[220px] pt-12 sm:pt-14 lg:pt-[60px]">
+        <div class="h-[calc(100dvh-48px)] sm:h-[calc(100dvh-56px)] lg:h-[calc(100dvh-60px)] min-h-0 flex relative">
+          <aside class="hidden md:flex w-64 min-h-0 flex-col border-r border-[#2a2a2a] bg-[#0d0d0d]">
+            <div class="p-4 border-b border-[#2a2a2a]">
+              <h1 class="text-white font-semibold text-base">Your Chats</h1>
+              <button class="mt-3 w-full h-10 rounded-xl border border-pink-500/40 text-pink-400 hover:bg-pink-500/10 transition-colors text-sm font-medium" type="button">New Chat</button>
+            </div>
+            <div class="flex-1 overflow-y-auto p-2 space-y-1">
+              <a class="flex items-center gap-3 p-3 rounded-xl hover:bg-[#141414] transition-colors" href="./chat.html">
+                <img class="w-10 h-10 rounded-full object-cover" src="./assets/images/characters/yerin.jpg" alt="Mia Jones" />
+                <div class="min-w-0">
+                  <p class="text-white text-sm font-medium truncate">Mia Jones</p>
+                  <p class="text-gray-500 text-xs truncate">Just finished a late shift...</p>
+                </div>
+              </a>
+              <a class="flex items-center gap-3 p-3 rounded-xl hover:bg-[#141414] transition-colors" href="./chat.html">
+                <img class="w-10 h-10 rounded-full object-cover" src="./assets/images/characters/ash.jpg" alt="Abigail" />
+                <div class="min-w-0">
+                  <p class="text-white text-sm font-medium truncate">Abigail "Abby" Smith</p>
+                  <p class="text-gray-500 text-xs truncate">Ready to chat?</p>
+                </div>
+              </a>
+            </div>
+          </aside>
+
+          <section class="flex-1 min-w-0 min-h-0 relative overflow-hidden">
+            <img src="./assets/images/characters/yerin.jpg" alt="Chat background" class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black/55"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/85"></div>
+
+            <div class="absolute top-4 left-1/2 -translate-x-1/2 w-full max-w-[560px] px-4 z-10">
+              <div class="flex items-center gap-2 rounded-full border border-pink-500/25 bg-black/35 backdrop-blur-md px-3 py-2">
+                <div class="flex items-center gap-1 text-pink-400 text-sm font-semibold">
+                  <span>✦</span><span class="font-bold">4</span><span class="font-medium">dreamcoins left</span>
+                </div>
+                <button class="ml-auto rounded-full bg-pink-600 hover:bg-pink-500 px-4 py-2 text-white transition-colors" type="button">
+                  <div class="text-sm font-extrabold leading-none">SIGN UP FREE</div>
+                  <div class="mt-0.5 flex items-center justify-center gap-1 text-[11px] font-semibold text-white/90 leading-none"><span>✦</span><span>50</span></div>
+                </button>
+              </div>
+            </div>
+
+            <div class="relative z-10 flex-1 min-h-0 flex flex-col items-center justify-center px-6">
+              <div class="w-full max-w-[560px]">
+                <div class="text-center text-[10px] text-white/50 mb-2">yesterday at 11:05 PM</div>
+                <div class="rounded-2xl bg-black/60 border border-white/10 backdrop-blur-sm shadow-[0_12px_40px_rgba(0,0,0,0.6)] p-5">
+                  <div class="max-h-[340px] overflow-y-auto scrollbar-hide pr-1">
+                    <p class="text-[#f5d7a5] text-sm leading-relaxed italic font-semibold whitespace-pre-line">
+                      Just finished a late shift at the studio... needed to unwind, so I caught the indie film at the cinema downtown. The credits rolled and I found myself thinking about you.
+                      {"\n\n"}What do you do?
+                    </p>
+                  </div>
+                </div>
+                <div class="mt-3 flex items-center gap-3 text-white/90">
+                  <button class="hover:text-pink-400 transition-colors" type="button">↻</button>
+                  <button class="hover:text-pink-400 transition-colors" type="button">☆</button>
+                  <button class="hover:text-pink-400 transition-colors" type="button">☆</button>
+                  <button class="hover:text-pink-400 transition-colors" type="button">☆</button>
+                  <button class="hover:text-pink-400 transition-colors" type="button">☆</button>
+                  <button class="hover:text-pink-400 transition-colors" type="button">»</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[560px] px-6 z-10 pb-6">
+              <div class="rounded-2xl border border-pink-500/25 bg-[#2b001f]/45 backdrop-blur-md px-4 py-3 relative">
+                <p class="text-pink-400 text-xs font-semibold">suggested reply:</p>
+                <p class="text-pink-400 text-sm font-semibold leading-snug mt-1">"Just hanging around. Wanna drink some coffee? I know a cozy café nearby."</p>
+                <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-pink-600 hover:bg-pink-500 text-white flex items-center justify-center transition-colors" type="button">➤</button>
+              </div>
+              <div class="mt-3 flex items-center gap-2 rounded-2xl bg-black/55 border border-white/10 backdrop-blur-md px-2 py-2">
+                <button class="p-2 rounded-xl text-gray-300 hover:text-white hover:bg-white/10 transition-colors" type="button">🖼</button>
+                <input type="text" placeholder="Send a message" class="flex-1 bg-transparent text-white placeholder-gray-400 text-sm outline-none px-1" />
+                <button class="p-2 rounded-xl text-gray-300 hover:text-white hover:bg-white/10 transition-colors" type="button">🎙</button>
+                <button class="w-10 h-10 rounded-full flex items-center justify-center transition-colors bg-pink-600 text-white hover:bg-pink-500" type="button">➤</button>
+              </div>
+            </div>
+          </section>
+
+          <aside class="hidden md:flex md:w-64 lg:w-80 h-full min-h-0 flex-col border-l border-[#2a2a2a] bg-[#0d0d0d]">
+            <div class="relative flex-shrink-0 h-[44vh] min-h-[320px] max-h-[520px] border-b border-[#2a2a2a]">
+              <img src="./assets/images/characters/yerin.jpg" alt="Mia Jones" class="w-full h-full object-cover" />
+              <div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/80 to-transparent">
+                <p class="text-white font-semibold text-sm">Mia Jones <span class="text-gray-400 font-normal">· 22</span></p>
+              </div>
+            </div>
+            <div class="flex-1 min-h-0 overflow-y-auto p-4 space-y-3">
+              <p class="text-gray-400 text-xs leading-relaxed">Mia is a reserved graphic designer with a creative mind and a quiet, observant charm.</p>
+              <div class="grid grid-cols-2 gap-2">
+                <button class="h-9 rounded-xl bg-[#141414] border border-[#2a2a2a] text-gray-200 hover:bg-[#1a1a1a] transition-colors text-xs" type="button">View Media</button>
+                <button class="h-9 rounded-xl bg-[#141414] border border-[#2a2a2a] text-gray-200 hover:bg-[#1a1a1a] transition-colors text-xs" type="button">Call Me</button>
+              </div>
+              <button class="w-full h-9 rounded-xl bg-[#141414] border border-[#2a2a2a] text-gray-200 hover:bg-[#1a1a1a] transition-colors text-xs" type="button">New Chat</button>
+              <div class="pt-2 border-t border-[#2a2a2a] space-y-1">
+                <button class="w-full flex items-center justify-between px-3 py-2 rounded-xl hover:bg-[#141414] transition-colors text-xs text-gray-200" type="button"><span>Members</span><span>›</span></button>
+                <button class="w-full flex items-center justify-between px-3 py-2 rounded-xl hover:bg-[#141414] transition-colors text-xs text-gray-200" type="button"><span>Writing Style</span><span>›</span></button>
+                <button class="w-full flex items-center justify-between px-3 py-2 rounded-xl hover:bg-[#141414] transition-colors text-xs text-gray-200" type="button"><span>Voice</span><span>›</span></button>
+                <button class="w-full flex items-center justify-between px-3 py-2 rounded-xl hover:bg-[#141414] transition-colors text-xs text-gray-200" type="button"><span>Memory</span><span>›</span></button>
+                <button class="w-full flex items-center justify-between px-3 py-2 rounded-xl hover:bg-[#141414] transition-colors text-xs text-gray-200" type="button"><span>Persona</span><span>›</span></button>
+                <button class="w-full flex items-center justify-between px-3 py-2 rounded-xl hover:bg-[#141414] transition-colors text-xs text-gray-200" type="button"><span>Preferences</span><span>›</span></button>
+                <button class="w-full flex items-center justify-between px-3 py-2 rounded-xl hover:bg-[#141414] transition-colors text-xs text-gray-200" type="button"><span>History</span><span>›</span></button>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
+

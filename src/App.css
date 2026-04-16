@@ -1,0 +1,43 @@
+/* App-specific styles */
+
+/* Ensure smooth transitions */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Disable transitions for transform and opacity (handled by specific components) */
+.character-card,
+.character-card-image,
+.modal-overlay,
+.modal-content {
+  transition-property: transform, box-shadow, opacity;
+}
+
+/* Masonry grid fallback */
+@media (min-width: 1280px) {
+  .character-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Ensure images don't overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Focus styles */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid #e91e8c;
+  outline-offset: 2px;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(233, 30, 140, 0.3);
+  color: white;
+}
